@@ -1,0 +1,2 @@
+#!/bin/sh
+ ctags --c-kinds=+px --extra=+f -R *
