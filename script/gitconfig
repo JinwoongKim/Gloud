@@ -1,0 +1,11 @@
+[user]
+	email = aragnom@gmail.com
+	name = JinwoongKim
+[color]
+ui = auto
+diff = auto
+status = auto
+branch = auto
+interactive = auto
+pager = true
+
