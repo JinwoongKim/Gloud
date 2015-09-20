@@ -87,7 +87,7 @@ alias grep='grep -In --color=auto --exclude="*tag*" --exclude="*cscope*"'
 alias vion='ps -ef | grep vi | grep -v service | grep -v color'
 
 
-alias cdd='cd /home/parallels/git/peloton'
+alias cdd='cd /home/parallels/git'
 alias cds='cd /home/parallels/git/storage'
 
 alias emacs='emacs -nw'

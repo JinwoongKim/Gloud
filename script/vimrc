@@ -205,6 +205,8 @@ set history=1000
 
 ab W w
 ab Q q
+ab Wq wq
+ab WQ wq
 
 "ctags
 "set tags=tags;/
@@ -213,4 +215,11 @@ set tags=./tags;
 "undo
 set undofile
 set undodir=~/.vim/undofile
+
+" contents of minimal .vimrc
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+map <silent> <C-n> :NERDTreeToggle<CR>
 
