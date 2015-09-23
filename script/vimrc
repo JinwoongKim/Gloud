@@ -1,7 +1,7 @@
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
 " Show line numbers.
@@ -15,39 +15,39 @@ syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " This file contains some boilerplate settings for vim's cscope interface,
-" plus some keyboard mappings that I've found useful.
-"
-" USAGE: 
-" -- vim 6:     Stick this file in your ~/.vim/plugin directory (or in a
-"               'plugin' directory in some other directory that is in your
-"               'runtimepath'.
-"
-" -- vim 5:     Stick this file somewhere and 'source cscope.vim' it from
-"               your ~/.vimrc file (or cut and paste it into your .vimrc).
-"
-" NOTE: 
-" These key maps use multiple keystrokes (2 or 3 keys).  If you find that vim
-" keeps timing you out before you can complete them, try changing your timeout
-" settings, as explained below.
-"
-" Happy cscoping,
-"
-" Jason Duell       jduell@alumni.princeton.edu     2002/3/7
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " plus some keyboard mappings that I've found useful.
+  "
+  " USAGE: 
+  " -- vim 6:     Stick this file in your ~/.vim/plugin directory (or in a
+  "               'plugin' directory in some other directory that is in your
+  "               'runtimepath'.
+  "
+  " -- vim 5:     Stick this file somewhere and 'source cscope.vim' it from
+  "               your ~/.vimrc file (or cut and paste it into your .vimrc).
+  "
+  " NOTE: 
+  " These key maps use multiple keystrokes (2 or 3 keys).  If you find that vim
+  " keeps timing you out before you can complete them, try changing your timeout
+  " settings, as explained below.
+  "
+  " Happy cscoping,
+  "
+  " Jason Duell       jduell@alumni.princeton.edu     2002/3/7
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-" This tests to see if vim was configured with the '--enable-cscope' option
-" when it was compiled.  If it wasn't, time to recompile vim... 
-"if has("cscope")
+  " This tests to see if vim was configured with the '--enable-cscope' option
+  " when it was compiled.  If it wasn't, time to recompile vim... 
+  "if has("cscope")
 
-""""""""""""" Standard cscope/vim boilerplate
+  """"""""""""" Standard cscope/vim boilerplate
 
-" use both cscope and ctag for 'ctrl-]', ':ta', and 'vim -t'
-set cscopetag
+  " use both cscope and ctag for 'ctrl-]', ':ta', and 'vim -t'
+  set cscopetag
 
-" check cscope for definition of a symbol before checking ctags: set to 1
-" if you want the reverse search order.
-set csto=0
+  " check cscope for definition of a symbol before checking ctags: set to 1
+  " if you want the reverse search order.
+  set csto=0
 
 function! LoadCscope()
   let db = findfile("cscope.out", ".;")
@@ -156,26 +156,26 @@ nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 "set notimeout 
 "
 " Or, you can keep timeouts, by uncommenting the timeoutlen line below,
-  " with your own personal favorite value (in milliseconds):
-  "
-  set timeoutlen=4000
-  "
-  " Either way, since mapping timeout settings by default also set the
-  " timeouts for multicharacter 'keys codes' (like <F1>), you should also
-  " set ttimeout and ttimeoutlen: otherwise, you will experience strange
-  " delays as vim waits for a keystroke after you hit ESC (it will be
-  " waiting to see if the ESC is actually part of a key code like <F1>).
-  "
-  "set ttimeout 
-  "
-  " personally, I find a tenth of a second to work well for key code
-  " timeouts. If you experience problems and have a slow terminal or network
-  " connection, set it higher.  If you don't set ttimeoutlen, the value for
-  " timeoutlent (default: 1000 = 1 second, which is sluggish) is used.
-  "
-  "set ttimeoutlen=100
+" with your own personal favorite value (in milliseconds):
+"
+set timeoutlen=4000
+"
+" Either way, since mapping timeout settings by default also set the
+" timeouts for multicharacter 'keys codes' (like <F1>), you should also
+" set ttimeout and ttimeoutlen: otherwise, you will experience strange
+" delays as vim waits for a keystroke after you hit ESC (it will be
+" waiting to see if the ESC is actually part of a key code like <F1>).
+"
+"set ttimeout 
+"
+" personally, I find a tenth of a second to work well for key code
+" timeouts. If you experience problems and have a slow terminal or network
+" connection, set it higher.  If you don't set ttimeoutlen, the value for
+" timeoutlent (default: 1000 = 1 second, which is sluggish) is used.
+"
+"set ttimeoutlen=100
 
-  "endif
+"endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tab settings for vim           
@@ -198,28 +198,28 @@ retab
 set shiftwidth=2
 set softtabstop=2
 set ai
-set hls
 
 "set command line history size to 1000
 set history=1000
 
-ab W w
-ab Q q
-ab Wq wq
-ab WQ wq
+ab w w
+ab q q
 
 "ctags
 "set tags=tags;/
 set tags=./tags;
 
-"undo
-set undofile
-set undodir=~/.vim/undofile
-
-" contents of minimal .vimrc
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-
 map <silent> <C-n> :NERDTreeToggle<CR>
 
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'git://git.wincent.com/command-t.git'
+
+filetype plugin indent on
+
+Plugin 'The-NERD-tree'
