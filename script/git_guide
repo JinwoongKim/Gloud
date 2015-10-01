@@ -49,6 +49,13 @@ Let's assume that you are working on branch A and you want to merge with branch 
 2. Remove branch in my local repository
 'git branch -d BRANCH_NAME'
 
+3. Create the branch on your local machine and switch in this branch
+'git checkout -b [name_of_your_new_branch]'
+
+Push the branch on github :
+'git push origin [name_of_your_new_branch]'
+
+
 #############
 ### LOG ###
 #############
