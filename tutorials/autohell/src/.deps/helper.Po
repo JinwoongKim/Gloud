@@ -1,0 +1,5 @@
+helper.o: helper.cpp /usr/include/stdc-predef.h helper.h
+
+/usr/include/stdc-predef.h:
+
+helper.h:
