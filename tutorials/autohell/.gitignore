@@ -2,6 +2,7 @@
 Makefile
 Makefile.in
 build/
+*.o
 
 #http://www.gnu.org/software/autoconf
 autom4te.cache

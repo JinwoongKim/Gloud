@@ -44,3 +44,21 @@ AC_CONFIG_FILES([Makefile
 
 # Finally produce "configure" script
 AC_OUTPUT
+
+echo \
+"---------------------------------------------------------------------
+
+${PACKAGE_NAME} 
+
+Version        : ${PACKAGE_VERSION}
+OS             : ${build_os}
+Prefix         : ${prefix}
+Compiler       : ${CC}
+CPP Flags      : ${CPPFLAGS} ${DEBUG_CPPFLAGS} 
+C++ Flags      : ${CXXFLAGS} ${DEBUG_CXXFLAGS}
+Make Flags     : ${MAKEFLAGS}
+Libraries      : ${LIBS} 
+
+---------------------------------------------------------------------"
+
+
