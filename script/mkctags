@@ -1,2 +1,2 @@
 #!/bin/sh
- ctags --c-kinds=+px --extra=+f -R *
+ ctags --c-kinds=+px --extra=+f --langmap=c++:+.cu -R *

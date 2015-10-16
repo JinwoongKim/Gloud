@@ -87,8 +87,7 @@ alias grep='grep -In --color=auto --exclude="*tag*" --exclude="*cscope*"'
 alias vion='ps -ef | grep vi | grep -v service | grep -v color'
 
 
-alias cdd='cd /home/parallels/git'
-alias cds='cd /home/parallels/git/storage'
+alias cdd='cd /home/jwkim/git'
 
 alias emacs='emacs -nw'
 alias open='xdg-open'
@@ -96,9 +95,10 @@ alias open='xdg-open'
 # max core dump size in blocks
 ulimit -c unlimited
 
-export PATH=/home/parallels/.myscript:/usr/local/peloton/bin:/usr/local/bin/peloton:/usr/local/peloton/bin:$PATH
+export PATH=/home/jwkim/git/share/script:/usr/local/peloton/bin:/usr/local/bin/peloton:/usr/local/peloton/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/ 
 export SVN_EDITOR=/usr/bin/vi
+export EDITOR=vim
 
 
 # Adapted from code found at <https://gist.github.com/1712320>.
