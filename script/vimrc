@@ -1,7 +1,7 @@
-source .basic.vim
-source .cscope.vim
-source .ctag.vim
-source .tab.vim
-source .bundle.vim
+source ~/.basic.vim
+source ~/.cscope.vim
+source ~/.ctag.vim
+source ~/.tab.vim
+source ~/.bundle.vim
 
 
