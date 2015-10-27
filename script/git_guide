@@ -73,6 +73,8 @@ undo previous commit,
 push it
 'git push --force'
 
+Fixing the “this exceeds GitHub’s file size limit of 100 MB” error
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch path/to/file.zip'
 
 
 #############
