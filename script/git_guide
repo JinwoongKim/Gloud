@@ -73,6 +73,10 @@ undo previous commit,
 push it
 'git push --force'
 
+or
+'git push --force origin master'
+
+
 
 
 #############
