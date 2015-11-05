@@ -55,6 +55,13 @@ Let's assume that you are working on branch A and you want to merge with branch 
 Push the branch on github :
 'git push origin [name_of_your_new_branch]'
 
+4. Fetch new branch
+
+check branch list
+'git branch -r'
+
+fetch the new branch
+'git fetch origin new_branch_name'
 
 #############
 ### LOG ###
