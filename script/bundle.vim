@@ -6,12 +6,14 @@
 " bundle manager for vim
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'Rip-Rip/clang_complete'
+"Plugin 'Rip-Rip/clang_complete'
+Bundle 'jistr/vim-nerdtree-tabs'
 Plugin 'SuperTab'
+Plugin 'The-NERD-Tree'
 call vundle#end()
 
 " key binding for nerdtreetoggle
-map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeTabsToggle<CR>
 
 "Clang & SuperTab
 let g:clang_library_path = '/usr/lib/x86_64-linux-gnu/libclang.so.1'
@@ -19,3 +21,6 @@ let g:clang_complete_auto = 0
 set completeopt=menuone,menu,longest
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
+
+"NerdTree Options
+let NERDTreeIgnore=['\.o$', '\~$'] " hide object files 
