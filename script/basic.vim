@@ -30,3 +30,7 @@ ab Q q
 " disable automatic comment insertion
 set formatoptions-=cro
 
+inoremap jj <ESC>j
+inoremap kk <ESC>k
+inoremap hhh <ESC>h
+inoremap lll <ESC>l

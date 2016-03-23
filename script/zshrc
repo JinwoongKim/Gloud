@@ -102,7 +102,7 @@ alias open='xdg-open'
 ulimit -c unlimited
 
 export PATH=/home/jwkim/git/share/script:/usr/local/cuda-7.0/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/ 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/:/usr/local/cuda-7.0/lib64
 export SVN_EDITOR=/usr/bin/vi
 export EDITOR=vim
 
