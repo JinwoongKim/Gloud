@@ -10,6 +10,7 @@ call vundle#begin()
 Bundle 'jistr/vim-nerdtree-tabs'
 Plugin 'SuperTab'
 Plugin 'The-NERD-Tree'
+Plugin 'ctrlp.vim'
 call vundle#end()
 
 " key binding for nerdtreetoggle

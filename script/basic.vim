@@ -34,3 +34,13 @@ inoremap jj <ESC>j
 inoremap kk <ESC>k
 inoremap hhh <ESC>h
 inoremap lll <ESC>l
+
+" undo file
+set undofile
+set undodir=~/.vim/undo
+
+" cursor  line
+:set cursorline
+:hi CursorLine   cterm=NONE ctermbg=52 "ctermfg=white guibg=131 guifg=white
+:hi CursorColumn cterm=NONE ctermbg=52 "ctermfg=white guibg=131 guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
