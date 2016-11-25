@@ -8,7 +8,7 @@ endif
 command Paste execute 'set noai | insert | set ai'
 
 " Show line numbers.
-set number
+"set number
 
 " Turn on syntax highlighting.
 syntax on
@@ -25,6 +25,7 @@ autocmd FileType make setlocal noexpandtab
 set history=1000
 
 ab W w
+ab Wq wq
 ab Q q
 
 " disable automatic comment insertion
@@ -38,6 +39,15 @@ inoremap lll <ESC>l
 " undo file
 set undofile
 set undodir=~/.vim/undo
+
+" highlight like TODO, FIXME ...
+if has("autocmd")
+    if v:version > 701
+        autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
+        autocmd Syntax * call matchadd('Search', '\W\zs\(HELP\|DEBUG\)')
+        autocmd Syntax * call matchadd('ErrorMsg', '\W\zs\(ERROR\|FATAL\)')
+    endif
+endif
 
 " cursor  line
 :set cursorline
