@@ -85,7 +85,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias grep='grep -In --color=auto --exclude="*tag*" --exclude="*cscope*"'
 
-alias cdd='cd /home/jwkim/git/ursus'
+alias cdd='cd /home/jwkim/git/Let-OSs-Do-Their-Job'
 
 alias gs='git status'
 alias ga='git add'
@@ -178,3 +178,5 @@ make()
    /usr/bin/make "$@" 2>&1 | sed -E -e "s/error/ $(echo -e "\\033[31m" ERROR "\\033[0m"/g)"   -e "s/warning/ $(echo -e "\\033[0;33m" WARNING "\\033[0m"/g)"
    return ${PIPESTATUS[0]}
 }
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
