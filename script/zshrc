@@ -85,8 +85,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias grep='grep -In --color=auto --exclude="*tag*" --exclude="*cscope*"'
 
-alias cdd='cd /home/jwkim/git/Let-OSs-Do-Their-Job'
-
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
@@ -98,11 +96,10 @@ alias open='xdg-open'
 # max core dump size in blocks
 ulimit -c unlimited
 
-export PATH=/home/jwkim/git/share/script:/usr/local/cuda-7.0/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/:/usr/local/cuda-7.0/lib64
+export PATH=/home/jwkim/git/share/script:$PATH:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
 export SVN_EDITOR=/usr/bin/vi
 export EDITOR=vim
-
 
 # Adapted from code found at <https://gist.github.com/1712320>.
  
