@@ -18,13 +18,13 @@ cp mkcscope ~/.scripts/
 cp mkctags ~/.scripts/
 
 # zsh & oh-my-zsh 
-cp tmux.conf ~/.tmux.conf
 cp zshrc ~/.zshrc
 tar xvf oh-my-zsh.tar
 rm -rf ~/.oh-my-zsh
 mv .oh-my-zsh ~
 
 # tmux
+cp tmux.conf ~/.tmux.conf
 tar xvf tmux.tar
 rm -rf ~/.tmux
 mv .tmux ~
