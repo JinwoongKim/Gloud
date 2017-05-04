@@ -17,17 +17,14 @@ mkdir ~/.scripts/
 cp mkcscope ~/.scripts/
 cp mkctags ~/.scripts/
 
-# zsh
+# zsh & oh-my-zsh 
 cp tmux.conf ~/.tmux.conf
 cp zshrc ~/.zshrc
-tar xvf tmux.tar
-rm -rf ~/.tmux
-mv .tmux ~
 tar xvf oh-my-zsh.tar
 rm -rf ~/.oh-my-zsh
 mv .oh-my-zsh ~
 
-
-
-
-
+# tmux
+tar xvf tmux.tar
+rm -rf ~/.tmux
+mv .tmux ~
