@@ -33,6 +33,23 @@ push your commit to the git server. You can push multiple commits at once
 7. 'git pull'
 Make your repository as the newest one
 
+8. Push/Pull without password
+
+Go to : https://github.com/settings/keys
+
+Click 'New SSH key'
+
+Create a key
+$ssh-keygen -t rsa
+copy ~/.ssh/id_rsa.pub
+
+in github project, in 'clone or download button' click 'use ssh' and copy the link
+
+in the local project directory
+
+$ git remote set-url origin 'copied-link'
+
+
 ##############
 ### Branch ###
 ##############
