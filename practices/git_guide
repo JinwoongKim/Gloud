@@ -72,8 +72,9 @@ Let's assume that you are working on branch A and you want to merge with branch 
 Push the branch on github :
 'git push origin [name_of_your_new_branch]'
 
-'git push --set-upstream origin [name_of_your_new_branch]'
+and  
 
+'git push --set-upstream origin [name_of_your_new_branch]'
 
 4. Fetch new branch
 
@@ -98,7 +99,7 @@ undo previous commit,
 'git checkout #commit')
 
 push it
-'git push --force'
+'git push --force' # !!!
 
 or
 'git push --force origin master'
