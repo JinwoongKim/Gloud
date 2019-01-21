@@ -59,7 +59,7 @@ To merge your branch with another one, use git merge
 Let's assume that you are working on branch A and you want to merge with branch B then,
 
 'git checkout B' <- go to branch B
-'git pull' <- update it 
+'git pull' <- update it
 'git checkout A' <- come back to my branch
 'git merge B' <- then merge with branch B, A will be merged with B
 
@@ -72,7 +72,7 @@ Let's assume that you are working on branch A and you want to merge with branch 
 Push the branch on github :
 'git push origin [name_of_your_new_branch]'
 
-and  
+and
 
 'git push --set-upstream origin [name_of_your_new_branch]'
 
@@ -91,11 +91,11 @@ fetch the new branch
 To trace your all modification, use below command.
 'git log -p --follow FILE_NAME'
 
-Whenever you want to 
+Whenever you want to
 undo previous commit,
-'git reset --hard #commit' 
+'git reset --hard #commit'
 
-(or go back 
+(or go back
 'git checkout #commit')
 
 push it
