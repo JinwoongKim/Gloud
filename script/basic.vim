@@ -51,6 +51,6 @@ endif
 
 " cursor  line
 :set cursorline
-:hi CursorLine   cterm=NONE ctermbg=52 "ctermfg=white guibg=131 guifg=white
-:hi CursorColumn cterm=NONE ctermbg=52 "ctermfg=white guibg=131 guifg=white
+:hi CursorLine   cterm=NONE ctermbg=153 "ctermfg=white guibg=131 guifg=white
+:hi CursorColumn cterm=NONE ctermbg=153 "ctermfg=white guibg=131 guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>

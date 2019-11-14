@@ -1,2 +1,3 @@
 #!/bin/sh
- ctags --c-kinds=+px --extra=+f --langmap=c++:+.cu -R *
+ ctags -R .  /usr/local/go/src/* /Users/jwkim/go/src/*
+# ctags --c-kinds=+px --extra=+f --langmap=c++:+.cu -R *

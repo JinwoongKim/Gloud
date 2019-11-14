@@ -1,5 +1,0 @@
-add.o: add.cpp /usr/include/stdc-predef.h add.h
-
-/usr/include/stdc-predef.h:
-
-add.h:

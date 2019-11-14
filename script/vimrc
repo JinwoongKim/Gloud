@@ -1,5 +1,6 @@
-source ~/.basic.vim
-source ~/.cscope.vim
-source ~/.ctag.vim
-source ~/.tab.vim
-source ~/.bundle.vim
+source ~/.vim/basic.vim
+source ~/.vim/cscope.vim
+source ~/.vim/ctag.vim
+source ~/.vim/tab.vim
+source ~/.vim/bundle.vim
+source ~/.vim/tailor.vim
